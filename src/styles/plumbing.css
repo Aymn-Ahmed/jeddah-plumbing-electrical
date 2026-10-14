@@ -1,0 +1,1385 @@
+/* ==========================================================================
+   Plumbing Dedicated Page Styles (صفحة السباكة المستقلة)
+   Warm Light Engineering Theme
+   ========================================================================== */
+
+/* Shared Section Utilities */
+.plumbing-section-wrap {
+  padding: 80px 0;
+  position: relative;
+}
+
+.plumbing-section-wrap.bg-subtle {
+  background-color: var(--bg-card-subtle);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.plumbing-section-wrap.bg-dark-warm {
+  background: linear-gradient(145deg, #1C1917 0%, #292524 100%);
+  color: #FAF7F2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-head-clean.light-version .section-big-title {
+  color: #FFFFFF;
+}
+
+.section-head-clean.light-version .section-lead-text {
+  color: #F5EFEB;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.section-pill.orange {
+  background: rgba(234, 88, 12, 0.18);
+  color: #FB923C;
+  border: 1px solid rgba(234, 88, 12, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   Header Navigation Enhancements
+   -------------------------------------------------------------------------- */
+.header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.header-nav-link.back-home-link {
+  background-color: var(--bg-card-subtle);
+  color: var(--text-headline);
+  border: 1px solid var(--border-subtle);
+}
+
+.header-nav-link.back-home-link:hover {
+  background-color: #E7E0D8;
+  color: var(--brand-orange);
+}
+
+.header-nav-link.plumbing-nav-badge {
+  background-color: var(--brand-orange-light);
+  color: var(--brand-orange);
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.header-nav-link.plumbing-nav-badge:hover {
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+}
+
+.hero-subnav-pills {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-subnav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.hero-subnav-pill:hover {
+  background: var(--brand-orange);
+  border-color: var(--brand-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
+}
+
+/* Service Card Actions on Home Page */
+.service-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.service-link-btn.primary-service-btn {
+  background-color: var(--brand-orange-light);
+  color: var(--brand-orange);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  font-weight: 700;
+}
+
+.service-link-btn.primary-service-btn:hover {
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+}
+
+.service-link-btn.secondary-service-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-strong);
+  font-size: 0.88rem;
+}
+
+.service-link-btn.secondary-service-btn:hover {
+  background-color: var(--bg-card-subtle);
+  color: var(--text-headline);
+}
+
+/* Footer Quick Services Pill */
+.footer-quick-services {
+  margin-top: 14px;
+}
+
+.footer-service-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(234, 88, 12, 0.1);
+  color: var(--brand-orange);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+  transition: all 0.2s ease;
+}
+
+.footer-service-pill:hover {
+  background: var(--brand-orange);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   1. Plumbing Hero Section
+   -------------------------------------------------------------------------- */
+.plumbing-hero-section {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0 60px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.plumbing-hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+}
+
+.plumbing-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.breadcrumb-home {
+  color: #E7E5E4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-home:hover {
+  color: #FFAA70;
+}
+
+.breadcrumb-sep {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.breadcrumb-current {
+  color: #FFAA70;
+  font-weight: 600;
+}
+
+.plumbing-badge {
+  background: rgba(234, 88, 12, 0.25);
+  border: 1px solid rgba(234, 88, 12, 0.45);
+  color: #FFEDD5;
+}
+
+.plumbing-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.plumbing-desc {
+  font-size: 1.2rem;
+  color: #F5EFEB;
+  max-width: 720px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.plumbing-hero-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.hero-anchor-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.hero-anchor-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   2. Services Explorer
+   -------------------------------------------------------------------------- */
+.plumbing-explorer-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 30px;
+  margin-top: 36px;
+  align-items: start;
+}
+
+.explorer-tabs-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.explorer-tab-btn {
+  text-align: right;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  color: inherit;
+}
+
+.explorer-tab-btn:hover {
+  border-color: var(--brand-orange);
+  background-color: #FFFFFF;
+  transform: translateX(-4px);
+}
+
+.explorer-tab-btn.active {
+  background: #FFFFFF;
+  border-color: var(--brand-orange);
+  border-right: 4px solid var(--brand-orange);
+  box-shadow: var(--shadow-md);
+}
+
+.tab-btn-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.tab-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--brand-orange-light);
+  color: var(--brand-orange);
+}
+
+.explorer-tab-btn h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-headline);
+  line-height: 1.4;
+}
+
+.explorer-tab-btn p {
+  font-size: 0.95rem;
+  color: #44403C;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.explorer-detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+}
+
+.detail-card-header {
+  margin-bottom: 20px;
+}
+
+.detail-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.detail-badge-pill {
+  background: var(--brand-orange-light);
+  color: var(--brand-orange);
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.detail-sbc-tag {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16A34A;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.detail-card-header h3 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--text-headline);
+  line-height: 1.35;
+}
+
+.detail-body-text {
+  font-size: 1.15rem;
+  color: #1C1917;
+  line-height: 1.85;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.detail-deliverables-box {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 26px;
+}
+
+.detail-deliverables-box h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-headline);
+  margin-bottom: 14px;
+}
+
+.deliverables-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deliverables-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+.detail-action-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.detail-order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px var(--brand-orange-glow);
+}
+
+.detail-order-btn:hover {
+  background-color: var(--brand-orange-hover);
+  transform: translateY(-2px);
+}
+
+.detail-phone-quick {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-headline);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 16px;
+  background: var(--bg-card-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  transition: background 0.2s;
+}
+
+.detail-phone-quick:hover {
+  background: #E7E0D8;
+  color: var(--brand-orange);
+}
+
+/* --------------------------------------------------------------------------
+   3. Interactive Stepper (مراحل التنفيذ)
+   -------------------------------------------------------------------------- */
+.stages-stepper-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+.stage-step-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.stage-step-btn:hover {
+  border-color: var(--brand-orange);
+  transform: translateY(-3px);
+}
+
+.stage-step-btn.active {
+  background: var(--brand-orange-light);
+  border-color: var(--brand-orange);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-card-subtle);
+  color: var(--text-headline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s;
+}
+
+.stage-step-btn.active .step-circle {
+  background: var(--brand-orange);
+  color: #FFFFFF;
+  border-color: var(--brand-orange);
+}
+
+.step-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.step-tag-mini {
+  font-size: 0.72rem;
+  color: var(--brand-orange);
+  font-weight: 700;
+}
+
+.step-title-mini {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-headline);
+  line-height: 1.3;
+}
+
+.stage-active-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+}
+
+.stage-panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+}
+
+.panel-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.panel-num {
+  background: var(--text-headline);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.panel-tag {
+  background: var(--brand-orange-light);
+  color: var(--brand-orange);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 999px;
+}
+
+.stage-panel-info h3 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--text-headline);
+  margin-bottom: 14px;
+}
+
+.panel-desc {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.panel-check-card {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.panel-check-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-headline);
+  margin-bottom: 12px;
+}
+
+.panel-check-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel-check-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-body);
+}
+
+.aside-tip-card {
+  background: var(--brand-orange-light);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tip-header h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-headline);
+}
+
+.aside-tip-card p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.tip-footer-indicator {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(234, 88, 12, 0.3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-orange);
+}
+
+/* --------------------------------------------------------------------------
+   4. Pressure Testing Cards Grid
+   -------------------------------------------------------------------------- */
+.pressure-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pressure-fact-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all 0.25s ease;
+}
+
+.pressure-fact-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--brand-orange);
+  transform: translateY(-3px);
+}
+
+.fact-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: rgba(234, 88, 12, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.pressure-fact-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.pressure-fact-card p {
+  font-size: 1.05rem;
+  color: #F5EFEB;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   5. Story-driven Real Work Showcase
+   -------------------------------------------------------------------------- */
+.story-showcase-container {
+  margin-top: 36px;
+}
+
+.story-nav-bar {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.story-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-headline);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.story-nav-btn:hover {
+  border-color: var(--brand-orange);
+  background: var(--brand-orange-light);
+}
+
+.story-nav-btn.active {
+  background: var(--brand-orange);
+  color: #FFFFFF;
+  border-color: var(--brand-orange);
+  box-shadow: 0 4px 14px var(--brand-orange-glow);
+}
+
+.story-display-card {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.story-image-side {
+  position: relative;
+  min-height: 380px;
+}
+
+.story-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-tag-pill {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.story-content-side {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.story-header-meta {
+  margin-bottom: 4px;
+}
+
+.story-location-badge {
+  font-size: 0.85rem;
+  color: var(--brand-orange);
+  font-weight: 700;
+}
+
+.story-header-meta h3 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-headline);
+  margin-top: 4px;
+  line-height: 1.35;
+}
+
+.story-scope-block strong,
+.story-procedure-block strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-headline);
+  margin-bottom: 4px;
+}
+
+.story-scope-block p,
+.story-procedure-block p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.story-result-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(22, 163, 74, 0.08);
+  border: 1px solid rgba(22, 163, 74, 0.2);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.story-result-box strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #15803D;
+  margin-bottom: 2px;
+}
+
+.story-result-box p {
+  font-size: 0.92rem;
+  color: #166534;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   6. Checklist Section
+   -------------------------------------------------------------------------- */
+.checklist-box-card {
+  max-width: 860px;
+  margin: 36px auto 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+}
+
+.checklist-progress-header {
+  margin-bottom: 26px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-headline);
+  margin-bottom: 10px;
+}
+
+.progress-num {
+  color: var(--brand-orange);
+}
+
+.checklist-progress-track {
+  width: 100%;
+  height: 10px;
+  background: var(--bg-card-subtle);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.checklist-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #EA580C 0%, #16A34A 100%);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.checklist-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.checklist-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.checklist-item-row:hover {
+  background: #FFFFFF;
+  border-color: var(--brand-orange);
+}
+
+.checklist-item-row.checked {
+  background: rgba(22, 163, 74, 0.05);
+  border-color: rgba(22, 163, 74, 0.3);
+}
+
+.checkbox-custom {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--border-strong);
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.checkbox-custom.active {
+  background: #16A34A;
+  border-color: #16A34A;
+}
+
+.checklist-item-row .item-text {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-headline);
+  line-height: 1.5;
+}
+
+.checklist-item-row.checked .item-text {
+  color: #15803D;
+}
+
+.checklist-advice-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.advice-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.advice-badge.info {
+  background: var(--brand-orange-light);
+  color: var(--brand-orange);
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.advice-badge.success {
+  background: rgba(22, 163, 74, 0.1);
+  color: #15803D;
+  border: 1px solid rgba(22, 163, 74, 0.25);
+}
+
+.checklist-disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   7. Smart Service Request Form
+   -------------------------------------------------------------------------- */
+.request-form-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  box-shadow: var(--shadow-lg);
+  align-items: center;
+}
+
+.form-header-side h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-headline);
+  margin-top: 10px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.form-header-side p {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.form-trust-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-headline);
+}
+
+.form-inputs-side {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-headline);
+}
+
+.form-select,
+.form-textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: #FFFFFF;
+  color: var(--text-headline);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--brand-orange);
+}
+
+.form-submit-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--whatsapp-green);
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 14px var(--whatsapp-glow);
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin-top: 6px;
+}
+
+.form-submit-whatsapp-btn:hover {
+  background-color: var(--whatsapp-green-hover);
+  transform: translateY(-2px);
+}
+
+.form-direct-phone-line {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.form-direct-phone-line a {
+  color: var(--brand-orange);
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   8. Plumbing FAQs Accordion
+   -------------------------------------------------------------------------- */
+.plumbing-faq-accordion {
+  max-width: 860px;
+  margin: 36px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-accordion-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faq-accordion-item.open {
+  border-color: var(--brand-orange);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+  font-family: inherit;
+  gap: 16px;
+}
+
+.faq-q-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-headline);
+}
+
+.faq-chevron {
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-chevron.rotate {
+  transform: rotate(180deg);
+  color: var(--brand-orange);
+}
+
+.faq-answer-panel {
+  padding: 0 22px 20px 22px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.faq-answer-panel p {
+  font-size: 0.98rem;
+  color: var(--text-body);
+  line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------------
+   9. Call To Action (قبل الفوتر)
+   -------------------------------------------------------------------------- */
+.plumbing-cta-section {
+  padding: 70px 0;
+  background: var(--bg-page);
+}
+
+.cta-banner-card {
+  background: linear-gradient(135deg, #1C1917 0%, #292524 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 56px 40px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  color: #FFFFFF;
+}
+
+.cta-banner-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.cta-badge {
+  display: inline-block;
+  background: rgba(234, 88, 12, 0.2);
+  color: #FB923C;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(234, 88, 12, 0.3);
+}
+
+.cta-banner-content h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.cta-banner-content p {
+  font-size: 1.1rem;
+  color: #D6D3D1;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.cta-buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--whatsapp-green);
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 16px var(--whatsapp-glow);
+  transition: all 0.2s ease;
+}
+
+.cta-btn-whatsapp:hover {
+  background: var(--whatsapp-green-hover);
+  transform: translateY(-2px);
+}
+
+.cta-btn-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: var(--text-headline);
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-btn-call:hover {
+  background: #F5EFEB;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Design for Plumbing Page
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .plumbing-title {
+    font-size: 2.4rem;
+  }
+
+  .plumbing-explorer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stages-stepper-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stage-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pressure-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story-display-card {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image-side {
+    min-height: 260px;
+  }
+
+  .request-form-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .plumbing-hero-section {
+    padding: 100px 0 40px;
+    min-height: auto;
+  }
+
+  .plumbing-title {
+    font-size: 1.85rem;
+  }
+
+  .plumbing-desc {
+    font-size: 1rem;
+  }
+
+  .stages-stepper-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .pressure-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-buttons-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-btn-whatsapp,
+  .cta-btn-call {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .detail-action-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .detail-order-btn,
+  .detail-phone-quick {
+    width: 100%;
+    justify-content: center;
+  }
+}
