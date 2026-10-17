@@ -32,12 +32,16 @@ export default function Navbar({ currentPath = '/', onNavigate }) {
             className="header-brand"
             title="الرئيسية - سباكة وكهرباء جدة"
           >
-            <div className="brand-logo-icon">
-              <ShieldCheck size={22} />
+            <div className="brand-logo-icon" style={{ overflow: 'hidden', padding: 0 }}>
+              <img
+                src="/brand_logo.jpg"
+                alt="شعار سباكة وكهرباء جدة"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
+              />
             </div>
             <div className="brand-titles">
               <span className="brand-name">سباكة وكهرباء جدة</span>
-              <span className="brand-subtitle">ضمان كتابي 15 سنة • كود SBC</span>
+              <span className="brand-subtitle">حي الأجاويد • ضمان 15 سنة • كود SBC</span>
             </div>
           </a>
 

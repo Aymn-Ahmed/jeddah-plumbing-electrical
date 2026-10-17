@@ -11,7 +11,8 @@ import {
   Wrench,
   Zap,
   Search,
-  Building2
+  Building2,
+  MapPin
 } from 'lucide-react';
 
 import { imagesConfig } from '../config/images';
@@ -236,6 +237,11 @@ export default function HomePage({ onNavigate }) {
   // --------------------------------------------------------------------------
   const testimonials = [
     {
+      name: 'أبو فيصل السلمي',
+      role: 'مالك فيلا - حي الأجاويد، جدة',
+      quote: 'سكنت في حي الأجاويد وكان عندي مشكلة مزمنة في ضغط تمديدات السباكة وقواطع الطبلون. تواصلت معهم وبحكم وجود مركزهم في الأجاويد حضروا خلال 25 دقيقة، والشغل معتمد بالكود السعودي وبضمان رسمي 15 سنة.'
+    },
+    {
       name: 'م. سلطان الغامدي',
       role: 'مالك فيلا - حي أبحر الشمالية',
       quote: 'أكثر ما أراحني هو اختبار الضغط بالمانومتر قبل صب الأرضيات وشهادة الضمان المكتوبة 15 سنة. شغل هندسي مرتب لأبعد حد.'
@@ -262,13 +268,13 @@ export default function HomePage({ onNavigate }) {
 
         <div className="container hero-content-wrap">
           <div className="hero-badge">
-            <Award size={16} />
-            <span>مقاولات معتمدة بجدة</span>
+            <MapPin size={16} />
+            <span>المركز الرئيسي: حي الأجاويد 📍 | تغطية شاملة لكافة أحياء جدة</span>
           </div>
 
           <h1 className="hero-headline">شغل يبقى 15 سنة</h1>
 
-          <p className="hero-subline">سباكة وكهرباء بضمان مكتوب في جدة</p>
+          <p className="hero-subline">سباكة وكهرباء بضمان مكتوب في جدة • المركز الرئيسي حي الأجاويد</p>
 
           <div className="hero-cta-buttons">
             <a
@@ -701,6 +707,151 @@ export default function HomePage({ onNavigate }) {
                 <p>{st.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ======================================================================
+          Main Location & City Coverage Section (Google Maps Local SEO)
+          ====================================================================== */}
+      <section className="location-coverage-section" style={{ background: '#fafaf9', padding: '70px 0', borderTop: '1px solid #f0ede8', borderBottom: '1px solid #f0ede8' }}>
+        <div className="container">
+          <div className="section-head-clean">
+            <span className="section-pill">التواجد الميداني</span>
+            <h2 className="section-big-title">موقعنا ومركز العمليات: حي الأجاويد بجدة</h2>
+            <p className="section-lead-text">
+              ننطلق من مركزنا التشغيلي في <strong>حي الأجاويد</strong> لنغطي كافة أحياء ومخططات مدينة جدة بفرق طوارئ مجهزة وسيارات خدمة متكاملة.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '24px',
+            marginTop: '32px'
+          }}>
+            <div style={{
+              background: '#ffffff',
+              padding: '32px',
+              borderRadius: '16px',
+              border: '1px solid #e7e5e4',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                <div style={{
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '10px',
+                  background: '#ffedd5',
+                  color: '#ea580c',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1c1917', margin: 0 }}>المركز الرئيسي: حي الأجاويد</h3>
+                  <span style={{ fontSize: '0.875rem', color: '#78716c' }}>جنوب شرق جدة • تواجد ميداني مستمر</span>
+                </div>
+              </div>
+
+              <p style={{ color: '#44403c', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '20px' }}>
+                المستودع الرئيسي وورشة التجهيزات الهندسية تقع في <strong>حي الأجاويد</strong>، مما يتيح لفنيينا الوصول السريع لعملاء الحي خلال 20 دقيقة، مع جاهزية كاملة لنقل المعدات وأجهزة اختبار الضغط لكافة أحياء جدة.
+              </p>
+
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://maps.google.com/?q=حي+الأجاويد+جدة"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '10px 18px',
+                    background: '#ea580c',
+                    color: '#ffffff',
+                    borderRadius: '8px',
+                    fontWeight: 700,
+                    fontSize: '0.9rem',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <MapPin size={16} />
+                  <span>فتح في خرائط Google</span>
+                </a>
+
+                <a
+                  href={`tel:${phoneNumber}`}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '10px 18px',
+                    background: '#f5f5f4',
+                    color: '#1c1917',
+                    borderRadius: '8px',
+                    fontWeight: 700,
+                    fontSize: '0.9rem',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <Phone size={16} />
+                  <span>اتصال بفرع الأجاويد</span>
+                </a>
+              </div>
+            </div>
+
+            <div style={{
+              background: '#ffffff',
+              padding: '32px',
+              borderRadius: '16px',
+              border: '1px solid #e7e5e4',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
+            }}>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#1c1917', marginBottom: '14px' }}>
+                أحياء جدة المشمولة بالخدمة والضمان
+              </h3>
+              <p style={{ color: '#78716c', fontSize: '0.875rem', marginBottom: '16px' }}>
+                سياراتنا مجهزة ومتنقلة يومياً بين مختلف أحياء ومخططات جدة:
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {[
+                  'حي الأجاويد (المركز الرئيسي)',
+                  'حي الصفا',
+                  'حي الحمدانية',
+                  'حي أبحر الشمالية',
+                  'حي أبحر الجنوبية',
+                  'حي الروضة',
+                  'حي السامر',
+                  'حي المرجان',
+                  'حي المحمدية',
+                  'حي الشاطئ',
+                  'حي البساتين',
+                  'حي النسيم',
+                  'حي الفيحاء',
+                  'حي السليمانية',
+                  'حي الروابي',
+                  'حي الصالحية'
+                ].map((zone, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      padding: '6px 12px',
+                      background: zone.includes('الأجاويد') ? '#ffedd5' : '#f5f5f4',
+                      color: zone.includes('الأجاويد') ? '#c2410c' : '#44403c',
+                      fontWeight: zone.includes('الأجاويد') ? 800 : 500,
+                      borderRadius: '6px',
+                      fontSize: '0.825rem',
+                      border: zone.includes('الأجاويد') ? '1px solid #fed7aa' : '1px solid #e7e5e4'
+                    }}
+                  >
+                    {zone}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

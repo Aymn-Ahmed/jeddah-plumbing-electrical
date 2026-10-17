@@ -147,7 +147,7 @@ export default function ConstructionPage({ onNavigate }) {
   const [formData, setFormData] = useState({
     projectType: 'فيلا خاصة',
     projectPhase: 'مرحلة العظم الإنشائي',
-    neighborhood: 'أبحر الشمالية',
+    neighborhood: 'حي الأجاويد (المركز الرئيسي)',
     notes: ''
   });
 
@@ -552,6 +552,7 @@ ${formData.notes ? `• تفاصيل إضافية: ${formData.notes}` : ''}
                   onChange={(e) => setFormData({ ...formData, neighborhood: e.target.value })}
                   className="form-select"
                 >
+                  <option value="حي الأجاويد (المركز الرئيسي)">حي الأجاويد (المركز الرئيسي)</option>
                   <option value="أبحر الشمالية">أبحر الشمالية</option>
                   <option value="الحمدانية">الحمدانية</option>
                   <option value="الروضة">الروضة</option>

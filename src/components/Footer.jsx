@@ -24,7 +24,11 @@ export default function Footer({ onNavigate }) {
       <div className="container footer-content-grid">
         <div className="footer-col-main">
           <div className="footer-brand-lockup">
-            <ShieldCheck size={26} color="#ea580c" />
+            <img
+              src="/brand_logo.jpg"
+              alt="شعار المؤسسة"
+              style={{ width: '38px', height: '38px', borderRadius: '8px', objectFit: 'cover', border: '1px solid #ea580c' }}
+            />
             <div>
               <h4>سباكة وكهرباء جدة</h4>
               <span>مقاولات معتمدة • ضمان كتابي 15 سنة</span>
@@ -88,7 +92,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <span>📍 الموقع:</span>
-              <span>جدة، المملكة العربية السعودية (تغطية لكافة الأحياء)</span>
+              <span><strong>المركز الرئيسي: حي الأجاويد</strong>، جدة (خدمة سريعة لكافة أحياء جدة)</span>
             </li>
             <li>
               <span>🕒 ساعات العمل:</span>
